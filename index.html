@@ -1,65 +1,87 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="src/css/style.css">
-    <title>Portfolio de Gustavo</title>
 </head>
 
 <body>
-<section class="portfolio section bd-container" id="portfolio">
-    <span class="section-subtitle">Meus Projetos</span>
-    <h2 class="section-title">Portfólio de Gustavo</h2>
-  
-    <div class="portfolio__container bd-grid">
-      <div class="portfolio__content mix web">
-        <a href="https://stringgustavo.github.io/gerador_senha_aleatoria/" class=""><img src="src/img/gerador.png" alt="Work 1" class="portfolio__img"></a>
-        <div class="portfolio__data">
-          <span class="portfolio__subtitle">Aplicação Web</span>
-          <a href="#">
-            <h2 class="portfolio__title">Gerador de Senhas Aleatórias</h2>
-          </a>
-    
-        </div>
-      </div>
-  
-      <div class="portfolio__content mix web">
-        <a href="https://stringgustavo.github.io/jogo_da_velha/" class=""><img src="src/img/jogo.png" alt="Work 2" class="portfolio__img"></a>
-        <div class="portfolio__data">
-          <span class="portfolio__subtitle">Aplicação Web</span>
-          <a href="#">
-            <h2 class="portfolio__title">Jogo da Velha</h2>
-          </a>
-          
-        </div>
-      </div>
-  
-      <div class="portfolio__content mix ux">
-        <a href="https://stringgustavo.github.io/quadro_de_desenho/" class=""><img src="src/img/quadro.png" alt="Work 3" class="portfolio__img"></a>
-        <div class="portfolio__data">
-          <span class="portfolio__subtitle">Aplicação Web</span>
-          <a href="#">
-            <h2 class="portfolio__title">Quadro de Desenho</h2>
-          </a>
-          
-        </div>
-      </div>
-  
-      <div class="portfolio__content mix ux">
-        <a href="https://stringgustavo.github.io/urna_eletronica/" class=""><img src="src/img/urna.png" alt="Work 4" class="portfolio__img"></a>
-        <div class="portfolio__data">
-          <span class="portfolio__subtitle">Aplicação Web</span>
-          <a href="#">
-            <h2 class="portfolio__title">Urna Eletrônica</h2>
-          </a>
-          
-        </div>
-      </div>
-    </div>
-  </section>
+    <div class="container">
+        <nav id="sidebar">
+            <div id="sidebar_content">
+                <div id="info_name">
+                    <h1>Gustavo.</h1>
+                    <p class="dev">Desenvolvedor <br> Back-end</p>
+                </div>
+                <div id="user">
+                    <img src="src/img/gstv-port.png" alt="" id="user_avatar">
+                </div>
+                
+                <div>
+                    <p class="email">gustavo.st971@gmail.com</p>
+                    <p class="country">Guaratinguetá, São Paulo - Brasil</p>
+                </div>
+                
+                <div id="social">
+                    <a href="https://www.linkedin.com/in/gustavo-st/" target="_blank"><i class="fa-brands fa-linkedin social-color"> </i></a>
+                    <a href="https://github.com/stringGustavo" target="_blank"> <i class="fa-brands fa-github social-color"></i></a>
+                    <a href="https://www.instagram.com/string.gustavo?igsh=Y3BvemQ5cjIwbmVn" target="_blank"><i class="fa-brands fa-instagram social-color"></i></a>
+                </div>
 
-<script src="src/js/script.js"></script>
+                <div id="footer">
+                    <a href="#"> <i class="fa-solid fa-envelope"></i> Entrar em contato</a>
+                </div>
+            </div>
+        </nav>
+    </div>
+        
+        <main id="main_content">
+            <div class="section_container">
+                <section id="intro" class="section">
+                    <p class="tag hidden from_top introduction"><i class="fa-solid fa-home"></i> Introdução</p>
+                    <div class="welcome_msg">
+                        <h1 class="title hidden from_left">Seja bem vindo(a)</h1>
+                        <h1 class="title hidden from_left">ao meu portfólio</h1>
+                        <p class="text hidden from_right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Praesentium, consectetur!</p>
+                    </div>
+                </section>
+
+                <section id="graduation" class="section">
+                    <p class="tag hidden from_bottom"><i class="fa-solid fa-graduation-cap"></i> Educação</p>
+                    
+                </section>
+                
+                <section id="about" class="section">                    
+                    <p class="tag hidden from_bottom"><i class="fa-solid fa-user"></i> Sobre</p>
+
+                </section>
+                
+                <section id="projects" class="section">
+                    <p class="tag hidden from_bottom"><i class="fa-solid fa-code"></i> Projetos</p>
+
+                </section>
+            </div>
+        </main>
+
+    <div class="container-nav">
+        <nav id="right-navbar">
+            <div id="navbar-content">
+                <a href="#intro" class="btn-nav active"><i class="btns fa-solid fa-home"></i></a>
+                <a href="#graduation" class="btn-nav"><i class="btns fa-solid fa-graduation-cap"></i></a>
+                <a href="#about" class="btn-nav"><i class="btns fa-solid fa-circle-user"></i></a>
+                <a href="#projects" class="btn-nav"><i class="btns fa-solid fa-code"></i></a>
+            </div>
+        </nav>
+    </div>
+    <script src="src/js/jquery-3.7.1.min.js"></script>
+    <script src="src/js/nav_section_acc.js"></script>
+    <script src="src/js/axis_transition.js"></script>
 </body>
+
 </html>
