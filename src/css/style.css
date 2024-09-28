@@ -15,12 +15,6 @@ body {
     background-color: #181818;
 }
 
-.all_content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-}
-
 main {
     width: 70%;
     height: 100vh;
@@ -28,7 +22,7 @@ main {
     scrollbar-width: none;
 }
 
-nav #footer a {
+nav #footer a, .container-sm #footer a {
     text-decoration: none;
     border: gray 1px solid;
     border-radius: 10px;
@@ -41,7 +35,7 @@ nav #footer a {
     margin-top: 40px;
 }
 
-nav #social a {
+nav #social a, .container-sm #social a {
     border: gray 1px solid;
     border-radius: 10px;
     padding: 10px 12px;
@@ -58,6 +52,25 @@ nav #social a {
 .container {
     min-width: 450px;
     position: relative;
+}
+
+.container-sm {
+    display: none;
+    justify-content: center;
+    margin: 0 auto;
+    padding: 10px 30px;
+    flex-direction: row;
+    align-items: center;
+    border: gray 1px solid;
+    border-radius: 20px;
+    width: fit-content;
+    gap: 50px;
+}
+
+.sm-bar {
+    width: 300px;
+    height: 300px;
+    /* border: 1px solid gray; */
 }
 
 #sidebar,
@@ -83,6 +96,7 @@ nav #social a {
 #sidebar_content {
     padding: 12px;
     margin: 0 30px;
+    font-weight: 300;
 }
 
 #user {
@@ -100,14 +114,26 @@ nav #social a {
     border-radius: 10px;
 }
 
-#info_name {
+.user_avatar_sm {
+    margin: 0 auto;
     margin-top: 30px;
+    width: 200px;
+    height: 200px;
+    border-radius: 10px;
+}
+
+#info_name {
+    margin-top: 15px;
     display: flex;
     justify-content: space-between;
 }
 
 #info_name .dev {
     font-size: .8em;
+}
+
+#info_name h1 {
+    font-weight: 400;
 }
 
 #info_name .stack {
@@ -123,10 +149,15 @@ nav #social a {
 .country {
     text-align: center;
     margin-top: 10px;
+    font-weight: 300;
+}
+
+#user_avatar, #footer {
+    transition: .5s;
 }
 
 #footer {
-    margin: 80px 0 20px 0;
+    margin: 70px 0 20px 0;
     text-align: center;
 }
 
@@ -178,7 +209,7 @@ nav #social a {
     min-height: 40vh;
     flex-direction: column;
     justify-content: center;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
 }
 
 .welcome_msg h1,
@@ -305,6 +336,10 @@ nav #social a {
     }
 }
 
+.year, .timeline_title, .location, .date {
+    font-weight: 300;
+}
+
 .year {
     margin-bottom: 10px;
     color: rgb(168, 168, 168);
@@ -334,8 +369,14 @@ nav #social a {
     align-items: center;
 }
 
+.portfolio_project_0 p {
+    text-align: justify;
+}
+
 .img_animal {
-    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
     width: 63vw;
     border-radius: 10px;
 }
@@ -348,12 +389,13 @@ nav #social a {
 }
 
 .img_side {
-    margin-top: 20px;
+    margin: 10px 0;
     border-radius: 10px;
-    width: 25vw;
+    width: 30vw;
 }
 
 .portfolio_project_0 h2 {
     font-size: 30px;
     font-weight: 300;
+    margin-bottom: 10px;
 }

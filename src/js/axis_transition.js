@@ -10,7 +10,7 @@ const observer = new IntersectionObserver( (entries) => {
 });
 
 const observeEach = (hiddenElement) => {
-    hiddenElement.forEach((element) => observer.observe(element));
+    hiddenElement.forEach( (element) => observer.observe(element));
 }
 
 observeEach(hiddenTop);
