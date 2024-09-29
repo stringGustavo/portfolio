@@ -141,7 +141,7 @@ nav #social a, .container-sm #social a {
     flex-direction: column;
 }
 
-#info_name .fullstack {
+#info_name .back {
     text-align: end;
 }
 
@@ -369,8 +369,33 @@ nav #social a, .container-sm #social a {
     align-items: center;
 }
 
-.portfolio_project_0 p {
+.portfolio_project_1 p, .portfolio_project_2 p {
     text-align: justify;
+}
+
+.container_buttons {
+    margin: 10px 0;
+}
+
+.button_projects {
+    background-color: rgb(24, 24, 24);
+    border: 1px solid rgb(128, 128, 128);
+    padding: 10px;
+    border-radius: 10px;
+    transition: background-color .5s ease;
+    cursor: pointer;
+
+    &:hover {
+        background-color: rgba(128, 128, 128, 0.39);
+    }
+}
+
+.active_button {
+    background-color: rgba(128, 128, 128, 0.39);
+}
+
+.deact_project {
+    display: none;
 }
 
 .img_animal {
@@ -381,11 +406,19 @@ nav #social a, .container-sm #social a {
     border-radius: 10px;
 }
 
+.images {
+    width: 63vw;
+}
+
 .side_by_side_images {
     display: flex;
     flex-direction: row;
     justify-content: center;
     gap: 20px;
+}
+
+.container_side_by_side p {
+    height: 3vh;
 }
 
 .img_side {
@@ -394,8 +427,23 @@ nav #social a, .container-sm #social a {
     width: 30vw;
 }
 
-.portfolio_project_0 h2 {
+.portfolio_project_1 h2, .portfolio_project_2 h2 {
     font-size: 30px;
     font-weight: 300;
     margin-bottom: 10px;
+}
+
+.csharp_icon {
+    background-color: #68217A;
+    width: fit-content;
+    padding: 5px;
+    border-radius: 100%;
+    font-size: 0.4em;
+}
+
+.icon_box {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 7px;
 }

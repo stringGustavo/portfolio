@@ -20,7 +20,7 @@
                     <h1>Gustavo.</h1>
                     <div class="stack">
                         <p class="dev">Desenvolvedor</p>
-                        <p class="dev fullstack" id="fullstack">Back-End</p>
+                        <p class="dev back">Back-End</p>
                     </div>
                 </div>
                 <div id="user">
@@ -61,13 +61,21 @@
                         e algumas informações sobre mim.</p>
                 </div>
 
+                <div style="display: flex; justify-content: center; margin-bottom: 10px;">
+                    <p>
+                        <i class="fa-solid fa-warning" style="color: #FFFF00;"></i>
+                        Página em construção
+                        <i class="fa-solid fa-warning" style="color: #FFFF00;"></i>
+                    </p>
+                </div>
+
                 <div class="container-sm">
                     <div class="sm-bar">
                         <div id="info_name">
                             <h1>Gustavo;</h1>
                             <div class="stack">
                                 <p class="dev">Desenvolvedor</p>
-                                <p class="dev fullstack" id="fullstack">Back-End</p>
+                                <p class="dev back">Back-End</p>
                             </div>
                         </div>
                         <div id="user">
@@ -128,15 +136,22 @@
 
         <section id="about" class="section">
             <p class="tag hidden from_bottom"><i class="fa-solid fa-user"></i> Sobre</p>
+            <p>Em breve</p>
         </section>
 
         <section id="projects" class="section">
             <p class="tag hidden from_bottom"><i class="fa-solid fa-code"></i> Projetos</p>
-
             <div class="projects_container">
                 <h1 class="title_projects hidden from_top">Projetos</h1>
-                <div class="portfolio_project_0">
-                    <h2 class="hidden from_top">PetKeep</h2>
+                <div class="container_buttons">
+                    <button class="button_projects active_button" id="project_1" type="button">Projeto Interdisciplinar
+                        1</button>
+                    <button class="button_projects" id="project_2" type="button">Projeto Interdisciplinar 2</button>
+                </div>
+                <div class="portfolio_project_1 active_project">
+                    <h2 class="hidden from_top">PetKeep <i style="color: #8993BE; font-size: 0.8em;"
+                            class="fa-brands fa-php"></i> <i style="color: #FFFF00; font-size: 0.8em;"
+                            class="fa-brands fa-js"></i></h2>
                     <p class="hidden from_top" style="margin-bottom: 20px;">O PetKeep é um sistema web que permite que
                         instituições de cuidado animal gerenciem e monitorem as informações de seus voluntários, seus
                         animais e, caso necessário, os divulguem para adoção. A prioridade do sistema é oferecer um
@@ -144,22 +159,22 @@
                         campanhas, manter registros veterinários (vacinas, doenças, consultas, medicações, vermífugos
                         etc), animais em lar temporário etc.</p>
                     <div class="image_container">
-                        <div>
+                        <div class="images">
                             <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de
                                 Visitante</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">Como visitante o usuário pode filtrar
                                 os animais e apenas visualizar algumas informações sobre o animal.</p>
                             <img class="img_animal hidden from_right" src="src/img/home.jpg" alt="edição de animal">
                         </div>
-                        <div>
+                        <div class="images">
                             <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de
                                 Adotante</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">Ao se autenticar como Adotante, o
                                 usuário pode solicitar a adoção de um animal disponível.</p>
-                            <img class="img_animal hidden from_right" src="src/img/adotarAnimal.jpg"
+                            <img class="img_animal hidden from_left" src="src/img/adotarAnimal.jpg"
                                 alt="edição de animal">
                         </div>
-                        <div>
+                        <div class="images">
                             <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela Home
                                 da Instituição</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">A instituição responsável pelo animal
@@ -167,7 +182,7 @@
                             <img class="img_animal hidden from_right" src="src/img/solicitacaoAnimal.jpg"
                                 alt="edição de animal">
                         </div>
-                        <div>
+                        <div class="images">
                             <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de
                                 Animais da Instituição</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">Aqui a instituição pode cadastrar um
@@ -175,32 +190,81 @@
                                 animais cadastrados</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">além de também poder selecionar um
                                 animal para mostrar mais informações.</p>
-                            <img class="img_animal hidden from_right" src="src/img/meusAnimais.jpg"
+                            <img class="img_animal hidden from_left" src="src/img/meusAnimais.jpg"
                                 alt="edição de animal">
                         </div>
-                        <div>
+                        <div class="images">
                             <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Edição e
                                 Saúde do animal</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">Aqui a instituição tem acesso a
                                 informações mais detalhadas sobre o animal, podendo também editar cada um delas.</p>
                             <p class="hidden from_top" style="font-size: 0.9em;">Aqui também pode ser feito o cadastro
                                 de saúde do animal. (Medicamentos, Vacinas, Doenças e Consultas)</p>
-                            <img class="img_animal hidden from_left" src="src/img/editarAnimal.jpg"
+                            <img class="img_animal hidden from_right" src="src/img/editarAnimal.jpg"
                                 alt="edição de animal">
                         </div>
                         <div class="side_by_side_images">
-                            <div>
-                                <p class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">Home
-                                    da Instituição</p>
-                                <p style="font-size: 0.9em;"></p>
+                            <div class="container_side_by_side">
+                                <h1 class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">Home
+                                    da Instituição</h1>
+                                <p style="font-size: 0.9em;">Na Home é possível visualizar informações gerais da
+                                    instituição.</p>
                                 <img class="img_side hidden from_left" src="src/img/tela_principal_instituicao.png"
                                     alt="home da instituição">
                             </div>
-                            <div>
-                                <p class="hidden from_right" style="text-decoration: underline; font-size: 1.4em;">
-                                    Filtro de Animais</p>
-                                <p style="font-size: 0.9em;"></p>
+                            <div class="container_side_by_side">
+                                <h1 class="hidden from_right" style="text-decoration: underline; font-size: 1.4em;">
+                                    Filtragem de Animais</h1>
+                                <p style="font-size: 0.9em;">Os animais podem ser filtrados por nome ou espécie.</p>
                                 <img class="img_side hidden from_right" src="src/img/animais_cadastrados.png"
+                                    alt="animais cadastrados">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="portfolio_project_2 deact_project">
+                    <h2 class="hidden from_top icon_box">AgendeAí
+                        <div class="csharp_icon">
+                            <i style="color: #FFF;" class="fa-brands">C#</i>
+                        </div>
+                        <i style="color: #FFFF00; font-size: 0.8em;" class="fa-brands fa-js"></i>
+                    </h2>
+                    <p class="hidden from_top" style="margin-bottom: 20px;">O AgendeAí é um software que
+                        facilita o agendamento de serviços para prestadores, substituindo formas ineficientes de
+                        anotação de horários, como cadernos físicos e planilhas. O objetivo do sistema é oferecer uma
+                        plataforma dinâmica e acessível para profissionais e clientes, permitindo que os
+                        usuários-clientes visualizem facilmente a agenda dos prestadores cadastrados e solicitem
+                        agendamentos de forma rápida e online.</p>
+                    <div class="image_container">
+                        <div class="images">
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do Profissional</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Como profissional o usuário pode criar, editar e deletar serviços, além de também poder editar suas informações profissionais.</p>
+                            <img class="img_animal hidden from_right" src="src/img/tela_do_profissional.png" alt="edição de animal">
+                        </div>
+                        <div class="images">
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do Cliente</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Ao se autenticar como cliente o usuário pode selecionar um profissional específico para ver seus serviços.</p>
+                            <img class="img_animal hidden from_left" src="src/img/tela_de_cliente.png"
+                                alt="edição de animal">
+                        </div>
+                        <div class="images">
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de Seleção de Serviços</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Aqui o usuário cliente pode escolher o serviço que desejar do profissional selecionado anteriormente.</p>
+                            <img class="img_animal hidden from_right" src="src/img/tela_selecao_de_servicos.png"
+                                alt="edição de animal">
+                        </div>
+                        <div class="side_by_side_images">
+                            <div class="container_side_by_side">
+                                <h1 class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">Seleção de dia e horário</h1>
+                                <p class="hidden from_right" style="font-size: 0.9em;">O usuário pode escolher um bloco de horário relativo ao tempo do serviço selecionado.</p>
+                                <img class="img_side hidden from_left" src="src/img/agendamento.png"
+                                    alt="home da instituição">
+                            </div>
+                            <div class="container_side_by_side">
+                                <h1 class="hidden from_right" style="text-decoration: underline; font-size: 1.4em;">
+                                    Confirmação de Agendamento</h1>
+                                <p class="hidden from_right" style="font-size: 0.9em;">E por fim o usuário pode visualizar todas as informações relacionadas ao agendamento e confirmar</p>
+                                <img class="img_side hidden from_right" src="src/img/confirmar_agendamento.png"
                                     alt="animais cadastrados">
                             </div>
                         </div>
@@ -224,7 +288,7 @@
     <script src="src/js/jquery-3.7.1.min.js"></script>
     <script src="src/js/nav_section_control.js"></script>
     <script src="src/js/axis_transition.js"></script>
-    <script src="src/js/text-replace.js"></script>
+    <script src="src/js/project_button.js"></script>
 </body>
 
 </html>

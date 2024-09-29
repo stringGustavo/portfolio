@@ -3,6 +3,18 @@
     .img_animal {
         width: 50vw;
     }
+
+    .img_side, .container_side_by_side {     
+        width: 25vw;
+    }
+
+    .images {
+        width: 50vw;
+    }
+
+    .container_side_by_side p {
+        height: 5.3vh;
+    }
 }
 
 @media only screen and (max-width: 1100px) {
@@ -21,6 +33,10 @@
     #right-navbar {
         top: 30%;
         right: 0%;
+    }
+
+    .container_side_by_side p {
+        height: 8vh;
     }
 }
 
@@ -82,5 +98,11 @@
     
     #footer {
         margin: 50px 0 20px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .container_side_by_side p {
+        height: 10.5vh;
     }
 }
