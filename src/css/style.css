@@ -422,7 +422,8 @@ nav #social a, .container-sm #social a {
 }
 
 .img_side {
-    margin: 10px 0;
+    display: flex;
+    margin: 10px auto;
     border-radius: 10px;
     width: 30vw;
 }

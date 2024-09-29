@@ -1,3 +1,8 @@
+@media only screen and (max-width: 1737px) {
+    .container_side_by_side p.adjust {
+        height: 6vh;
+    }
+}
 
 @media only screen and (max-width: 1400px) {
     .img_animal {
@@ -36,6 +41,12 @@
     }
 
     .container_side_by_side p {
+        height: 8vh;
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .container_side_by_side p.adjust {
         height: 8vh;
     }
 }

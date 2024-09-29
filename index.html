@@ -144,8 +144,10 @@
             <div class="projects_container">
                 <h1 class="title_projects hidden from_top">Projetos</h1>
                 <div class="container_buttons">
-                    <button class="button_projects active_button" id="project_1" type="button">Projeto Interdisciplinar (5º Semestre)</button>
-                    <button class="button_projects" id="project_2" type="button">Projeto Interdisciplinar (4º Semestre)</button>
+                    <button class="button_projects active_button" id="project_1" type="button">Projeto Interdisciplinar
+                        (5º Semestre)</button>
+                    <button class="button_projects" id="project_2" type="button">Projeto Interdisciplinar (4º
+                        Semestre)</button>
                 </div>
                 <div class="portfolio_project_1 active_project">
                     <h2 class="hidden from_top">PetKeep <i style="color: #8993BE; font-size: 0.8em;"
@@ -206,7 +208,8 @@
                             <div class="container_side_by_side">
                                 <h1 class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">Home
                                     da Instituição</h1>
-                                <p style="font-size: 0.9em;">Na Home é possível visualizar informações gerais da
+                                <p class="hidden from_bottom" style="font-size: 0.9em;">Na Home é possível visualizar
+                                    informações gerais da
                                     instituição.</p>
                                 <img class="img_side hidden from_left" src="src/img/tela_principal_instituicao.png"
                                     alt="home da instituição">
@@ -214,7 +217,8 @@
                             <div class="container_side_by_side">
                                 <h1 class="hidden from_right" style="text-decoration: underline; font-size: 1.4em;">
                                     Filtragem de Animais</h1>
-                                <p style="font-size: 0.9em;">Os animais podem ser filtrados por nome ou espécie.</p>
+                                <p class="hidden from_bottom" style="font-size: 0.9em;">Os animais podem ser filtrados
+                                    por nome ou espécie.</p>
                                 <img class="img_side hidden from_right" src="src/img/animais_cadastrados.png"
                                     alt="animais cadastrados">
                             </div>
@@ -236,39 +240,51 @@
                         agendamentos de forma rápida e online.</p>
                     <div class="image_container">
                         <div class="images">
-                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do Profissional</p>
-                            <p class="hidden from_top" style="font-size: 0.9em;">Como profissional o usuário pode criar, editar e deletar serviços, além de também poder editar suas informações profissionais.</p>
-                            <img class="img_animal hidden from_right" src="src/img/tela_do_profissional.png" alt="edição de animal">
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do
+                                Profissional</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Como profissional o usuário pode criar,
+                                editar e deletar serviços, além de também poder editar suas informações profissionais.
+                            </p>
+                            <img class="img_animal hidden from_right" src="src/img/tela_do_profissional.png"
+                                alt="edição de animal">
                         </div>
                         <div class="images">
-                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do Cliente</p>
-                            <p class="hidden from_top" style="font-size: 0.9em;">Ao se autenticar como cliente o usuário pode selecionar um profissional específico para ver seus serviços.</p>
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela do
+                                Cliente</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Ao se autenticar como cliente o usuário
+                                pode selecionar um profissional específico para ver seus serviços.</p>
                             <img class="img_animal hidden from_left" src="src/img/tela_de_cliente.png"
                                 alt="edição de animal">
                         </div>
                         <div class="images">
-                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de Seleção de Serviços</p>
-                            <p class="hidden from_top" style="font-size: 0.9em;">Aqui o usuário cliente pode escolher o serviço que desejar do profissional selecionado anteriormente.</p>
+                            <p class="hidden from_top" style="text-decoration: underline; font-size: 1.4em;">Tela de
+                                Seleção de Serviços</p>
+                            <p class="hidden from_top" style="font-size: 0.9em;">Aqui o usuário cliente pode escolher o
+                                serviço que desejar do profissional selecionado anteriormente.</p>
                             <img class="img_animal hidden from_right" src="src/img/tela_selecao_de_servicos.png"
                                 alt="edição de animal">
                         </div>
                         <div class="side_by_side_images">
                             <div class="container_side_by_side">
-                                <h1 class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">Seleção de dia e horário</h1>
-                                <p class="hidden from_right" style="font-size: 0.9em;">O usuário pode escolher um bloco de horário relativo ao tempo do serviço selecionado.</p>
-                                <img class="img_side hidden from_left" src="src/img/agendamento.png"
+                                <h1 class="hidden from_left" style="text-decoration: underline; font-size: 1.4em;">
+                                    Seleção de dia e horário</h1>
+                                <p class="hidden from_bottom adjust" style="font-size: 0.9em;">O usuário pode escolher um bloco
+                                    de horário relativo ao tempo do serviço selecionado.</p>
+                                <img class="img_side hidden from_left adjust_image" src="src/img/agendamento.png"
                                     alt="home da instituição">
                             </div>
                             <div class="container_side_by_side">
                                 <h1 class="hidden from_right" style="text-decoration: underline; font-size: 1.4em;">
-                                    Confirmação de Agendamento</h1>
-                                <p class="hidden from_right" style="font-size: 0.9em;">E por fim o usuário pode visualizar todas as informações relacionadas ao agendamento e confirmar</p>
-                                <img class="img_side hidden from_right" src="src/img/confirmar_agendamento.png"
+                                    Confirmar Agendamento</h1>
+                                <p class="hidden from_bottom adjust" style="font-size: 0.9em;">O usuário pode
+                                    visualizar todas as informações relacionadas ao agendamento e confirmar.</p>
+                                <img class="img_side hidden from_right adjust_image" src="src/img/confirmar_agendamento.png"
                                     alt="animais cadastrados">
                             </div>
                         </div>
                     </div>
                 </div>
+            </div>
             </div>
         </section>
         </div>
